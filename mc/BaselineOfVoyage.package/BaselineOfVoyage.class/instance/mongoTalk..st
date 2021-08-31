@@ -2,6 +2,6 @@ external projects
 mongoTalk: spec
 	spec 
 		baseline: 'MongoTalk' 
-			with: [ spec repository: 'github://pharo-nosql/mongotalk:1.24/mc';
-			loads: #( 'Client' ) ];
+			with: [ spec repository: 'github://jvalteren/mongotalk-stable:develop';
+			loads: #( 'Client Core' ) ];
 		import: 'MongoTalk'
