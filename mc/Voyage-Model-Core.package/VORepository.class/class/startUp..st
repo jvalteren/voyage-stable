@@ -1,4 +1,4 @@
 system startup
-startUp: resumming
-	resumming 
+startUp: resuming
+	resuming 
 		ifTrue: [ self current startUp ]
