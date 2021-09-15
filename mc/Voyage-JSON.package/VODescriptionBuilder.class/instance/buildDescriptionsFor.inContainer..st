@@ -7,6 +7,6 @@ buildDescriptionsFor: aClass inContainer: container
 		copyWithoutAll: (
 			(container children collect: #attributeName), 
 			(explicitDescriptions collect: #attributeName)))
-		collect: [ :each | self buildInfered: each ]. 
+		collect: [ :each | aClass buildDescriptionNamed: each withBuilder: self ]. 
 		
 	^ explicitDescriptions, inferedDescriptions
